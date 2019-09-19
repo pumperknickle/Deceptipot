@@ -23,7 +23,7 @@ Clone this repository and cd into it
 ### 4. Create data infrastructure for ElasticSearch
 
 ```
-sudo mkdir -p /data/elasticsearch/data && sudo chown -R 1000:1000 /data/elasticsearch
+> sudo mkdir -p /data/elasticsearch/data && sudo chown -R 1000:1000 /data/elasticsearch
 ```
 
 ### 5. Increase memory limits for Docker
@@ -39,7 +39,7 @@ Open Docker UI then go to Preferences -> Advanced and increase memory limit
 ### 6. Start multi-container app (honeytrap, elasticsearch, kibana, cowrie)
 
 ```
-docker-compose -f docker-compose-honeytrap-playground.yml up
+> docker-compose -f docker-compose-honeytrap-playground.yml up
 ```
 
 This will start a container running Elasticsearch, Kibana, Cowrie and HoneyTrap, all running in the honeytrap network.
