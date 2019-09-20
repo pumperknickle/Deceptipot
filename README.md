@@ -53,5 +53,13 @@ To get the data into Kibana we need to set a index-pattern. Kibana will auto-dis
 Enter the index-name honeytrap in the index-pattern field.
 Now when you go to Discover it should show you the HoneyTrap data coming in.
 
+### 8. Test the Honeypot
+
+```
+> ssh -p 8022 root@127.0.0.1
+```
+
+No password for root is required. A simulated medium interaction shell is presented to the attacker, and all communication is logged on the ELK stack.
+
 
 
